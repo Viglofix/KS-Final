@@ -1,0 +1,997 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins";
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    height: 90px;
+    background:white;
+  }
+  
+  .inner-width{
+    max-width: 1000px;
+    padding: 10 10px;
+    margin: auto;
+  }
+  
+  .logo{
+    float: left;
+    padding: 20px 0;
+  }
+  
+  .logo img{
+    height: 60px;
+  }
+  
+  .navigation-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+  }
+  
+  .navigation-menu a{
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+  
+  .navigation-menu a:hover{
+    background: #fff;
+    color: #2f3640;
+  }
+  
+  .navigation-menu i{
+    margin-right: 8px;
+    font-size: 16px;
+  }
+
+  .menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: black;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+  }
+
+  .imper1 {
+    color: gold;
+  }
+  
+  
+  @media screen and (max-width:700px) {
+    .menu-toggle-btn{
+      display: block !important;
+    }
+  
+    .navigation-menu{
+      position: fixed;
+      width: 100%;
+      max-width: 200px;
+      background: silver;
+      top: 90px;
+      right: 0;
+      display: none;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      border-radius: 20px;
+    }
+  
+    .navigation-menu::before{
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #172b4d;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
+  
+    .navigation-menu a{
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .navigation-menu.active{
+      display: block;
+    }
+  }
+
+
+/* header {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 35px 100px 0px;
+}
+
+.logo {
+    display: flex;
+    width: 10%;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    margin-right: auto;
+    margin: auto;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+
+.telefon {
+    display: flex;
+}
+
+.tel {
+    margin-left: 20px;
+    width: 100%;
+}
+
+hr {
+    color: white;
+    position: relative;
+    right: -5px;
+   width: 40px;
+    transform: rotate(90deg);
+    position: relative;
+    right: -190px;
+    top: -12px;
+    opacity: 0.7px;
+    color: gray; 
+}
+
+.fas {
+    margin-left: 10px;
+}
+
+*/
+
+.center {
+    margin: 30px;
+}
+
+.imang{
+ background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+ background-repeat: no-repeat;
+ height: 700px;
+ background-size: cover;
+ background-position: center center; 
+ padding: 20px;
+ overflow: hidden;
+}
+
+.horizon {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+    position: relative;
+    top: 300px;
+    left: 120px;
+    font-size: 1.6rem;
+}
+
+.hor1 {
+    font-size: 4rem;
+    position: relative;
+    left: -130px;
+}
+
+#hor2 {
+    font-size: 1.2rem;
+    position: relative;
+    left: -95px;
+
+}
+
+.baton {
+}
+
+#hor3 {
+
+    height: 60px;
+    width: 180px;
+    position: relative;
+    left: -285px;
+    background-color: orange;
+}
+
+.hor3:hover {
+    background-color: gold;
+}
+
+.important {
+    color: gold;
+}
+
+.dot {
+    color: orange;
+}
+
+.expierience {
+margin: 50px;
+display: flex;
+justify-content: center;
+}
+
+.centrum {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.leftSide {
+    width: calc(100% - 50%);
+}
+
+.picture {
+    width: calc(100% - 50%);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.years {
+    text-align: left;
+}
+
+.paragraf {
+    text-align: left;
+    font-size: 1.2rem;
+    color: silver;
+}
+
+.stapla {
+display: flex;
+justify-content: space-evenly;
+font-size: 4rem;
+}
+
+.staple {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.x {
+}
+
+.y {
+}
+
+.z {
+}
+
+.picture img{
+    width: 400px;
+    height: auto;
+}
+
+#headtwo {
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.navhead {
+    display: flex;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+#navbork ul {
+}
+
+#navbork ul li a{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#Discover {
+ text-align: left;
+ flex-wrap: wrap;
+ 
+}
+
+.navtwo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.budynki img{
+    width: 100%;
+    margin: 10px;
+}
+
+
+.centertwo {
+    margin: 30px;
+}
+
+.imangtwo{
+ background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 700px;
+ background-size: cover;
+ background-position: center center; 
+ padding: 20px;
+ overflow: hidden;
+}
+
+.horizontwo {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    right: 20px;
+    font-size: 1.6rem;
+}
+
+.hor1two {
+    color: gold;
+    position: relative;
+    top: -45px;
+    font-size: 1.1rem;
+}
+
+.hor2two {
+    font-size: 2.4rem;
+}
+
+.fas .fa-car .gtx{
+color: aquamarine;
+}
+
+.hor3two {
+    color: grey;
+}
+
+.resistor {
+    color: gold;
+}
+
+/* .horizontwoFooter {
+    background-color: silver;
+    width: 1983px;
+    height: 120px;
+    margin-top: 343px;
+    margin-right: 50px;
+    position: relative;
+    left: -20px;
+}
+*/
+
+/* .horizontwoFooter i {
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+*/
+.horizontwoFooterMain {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.horizontwoFooter {
+    background-color: silver;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.elment i{
+    font-size: 4rem;
+    margin-left: 80px;
+}
+
+
+footer {
+    margin-top: 300px;
+}
+
+.footerKontyner {
+    margin: 30px;
+    overflow: hidden;
+
+}
+
+.listem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.listTwo {
+margin-right: 40px;
+}
+
+.logos {
+    display: flex;
+    width: 10%;
+}
+
+
+.logos img {
+    max-width: 100%;   
+}
+
+.footerImang {
+    background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center; 
+    padding: 20px;
+}
+
+.listTwo {
+    position: relative;
+    left: -190px;
+    color: white;
+
+}
+.listOne {
+    position: relative;
+    left: -60px;
+    color: white;
+}
+
+.icons {
+    text-align: right;
+    justify-content: end;
+}
+
+.item-1 {
+    background-color: aqua;
+   /* margin-left: 40px; */
+}
+
+.item-5 {
+    /*
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+background-color: red;
+margin-left: 240px;
+*/
+}
+.item-6 {
+    /*
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-color: aqua;
+    margin-left: 740px;
+   */
+}
+
+.item-7 {
+    background-color: brown;
+}
+
+.item-8 {
+    background-color: aquamarine;
+}
+
+
+
+.grid-wrapper {
+ /*  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 60px;
+   max-width: 1200px;
+   margin: 20px auto;
+   */
+display: flex;
+flex-direction: row;
+
+
+
+/* display: grid;
+grid-template-columns: repeat(3, 250px);
+row-gap: 25px;
+column-gap: 20px; */
+
+}
+
+.imango {
+    width: 100%;
+    border: 4px solid #fff;
+}
+
+.col1 {
+    width: calc(100% - 33.3%);
+
+}
+
+.col1 .gold {
+    color: gold;
+    letter-spacing: 3px;
+}
+
+.greyp {
+    color: grey;
+}
+
+.benito {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.benitoOne {
+    text-align: right;
+    padding: 10px;
+    margin-right: 30px;
+}
+.benitoTwo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.imangeusz {
+    width: 120px;
+    margin-left: 20px;
+    position: relative;
+    top: 30px;
+    right: -20px;
+}
+
+.benicjusz {
+    color: silver;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.kolumnolista {
+    text-align: right;
+    margin-right: 180px;
+    margin-left: 1200px;
+    position: relative;
+    left: -270px;
+    color: silver;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.harm{
+    color: silver;
+}
+
+.kumintang {
+    display: flex;
+    flex-direction: column;
+}
+
+.kumintang li::before {
+    content: "👉";
+}
+
+@media screen and (max-width: 600px){
+    .nav {
+        margin-right: 120px;
+        flex-direction: column;
+        display: flex;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    .telefon {
+        padding: 0;
+        margin-right: 120px;
+        display: flex;
+        flex: 50%;
+        justify-content: end;
+    }
+
+@media screen and (max-width: 600px){
+    .tel{
+padding: 0;
+margin: 0;
+    }}
+
+
+}
+
+@media screen and (max-width:600px) {
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+}
+
+@media screen and (max-width:600px) {
+    .hor1 {
+    text-align: right;
+    font-size: auto;
+    }
+    .hor2 {
+        text-align: right;
+        flex-wrap: wrap;
+        font-size: 1.1rem;
+    }
+    .baton {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 550px;
+        }
+
+}
+
+@media screen and (max-width:600px) {
+    /*.centrum {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        transform: scale(0.5);
+        transition: all 0.8s;
+        justify-content: left;
+        margin-right: 115px;
+
+    } */
+  
+}
+
+@media screen and (max-width:600px){
+    body {
+        background-color: white;
+    }
+}
+
+/*@media screen and (max-width:600px) {
+    .grid-wrapper {
+        transform: scale(0.9);
+    }
+}*/
+
+@media screen and (max-width:600px) {
+    .listOne {
+        margin-left: 100px;
+    }
+    .listTwo {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:948px) {
+    .kolumnolista {
+        position: relative;
+        left: -580px;
+    }
+}
+@media screen and (max-width:862px) {
+    .kumintang {
+        position: relative;
+        left: -300px;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    #Discover{
+     position: relative;
+     right: -80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navtwo{
+        position: relative;
+        right: -80px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .center {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+    /*.imang {
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 20px;
+    }*/
+   /* .col1{
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    } */
+};
+
+
+
+@media screen and (max-width:300px) {
+   /* .col1 {
+        position: relative;
+        top: -500px;
+    }
+
+    .imango{
+    position: relative;
+    left: -350px;
+        }
+    .col2{
+        position: relative;
+        left: -350px;
+    }
+
+    .drugaj {
+        position: relative;
+        left: -350px;
+    }
+
+    .elment{
+        position: relative;
+        right: -80px;
+        display: flex;s
+        flex-direction: column;
+    }
+    .imang {
+        margin:auto;
+        width: 100%; */
+ 
+    }
+    .head {
+        margin-left: -50px;
+        text-align: center;
+    }
+    #Discover {
+        position: relative;
+        right: -150px;
+    }
+    .navtwo {
+        position: relative;
+        right: -150px;
+    }
+   
+
+@media screen and (max-width:600px) {
+    /*.grid-wrapper article{width: calc(50% - 30px);}*/   
+}
+
+
+
+
+
+
+/* @media screen and (max-width:400px) {
+.expierience {
+   display: flex;
+   flex-direction: column;
+   transform: scale(0.4);
+   margin-left: auto;
+   margin-right: auto;
+}
+.centrum {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transform: scale(0.6);
+    margin-left: auto;
+    margin-right: 120px;
+    width: auto;
+}
+}
+@media screen and (max-width:600px) {
+    .expierience {
+       display: flex;
+       flex-direction: column;
+       transform: scale(0.6);
+       margin-left: 0px;
+       margin-right: 400px;
+
+    }
+    .centrum {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
+    }
+    }
+
+*/
+
+
+
+
+@media screen and (max-width:300px) {
+    #head {
+        margin-right: 30px;
+    }
+
+    .centertwo{
+    margin: 0px;
+    width: 100%;
+    }
+    .imangtwo{
+        width: 100%;
+        height: 700px;
+        padding: 20px;
+        overflow: hidden;
+       }
+}
+
+@media screen and (max-width:400px) {
+   /* .col1 {
+        position: relative;
+        top: -500px;
+    } 
+    */
+    /*
+    .imango{
+    position: relative;
+    left: -350px;
+        }
+    .col2{
+        position: relative;
+        left: -350px;
+    }
+    .drugaj {
+        position: relative;
+        left: -350px;
+    }
+    .elment{
+        position: relative;
+        right: -80px;
+        display: flex;
+        flex-direction: column;
+    }
+    */
+    .grid-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px; border: 5px solid silver;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .col2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(50% - 30px);
+    }
+
+    .col1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(50% - 30px);
+        }
+    article {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .benito {
+        margin: 20px;
+        position: relative;
+        left: -90px;
+    }
+   .years {
+    display: flex;
+   }
+
+
+    
+    
+
+    .hor1 {
+        position: relative;
+        margin-left: 220px;
+        font-size: 0.9rem;
+       text-align: center;
+    }
+    .hor2 {
+        position: relative;
+        margin-left: 50px;
+        left: -70px;
+    }
+    #head {
+        position: relative;
+        left: -65px;
+
+    }
+    .telefon {
+        font-size: 0.8rem;
+        position: relative;
+        left: -80px;
+    }
+    #Discover {
+        position: relative;
+        right: -150px;
+    }
+    .navtwo {
+        position: relative;
+        right: -150px;
+    }
+   
+}; 
+@media screen and(width:600px){
+    .staple {
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width:760px) {
+    .expierience {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px) {
+    .stapla{
+        flex-direction: column;
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        right: -150px;
+
+    }
+    .staple {
+     position: relative;
+     top: -150px;
+    }
+}
+

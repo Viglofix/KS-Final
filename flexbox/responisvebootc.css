@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins";
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo{
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.home {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.home span {
+    margin-right: 20px;
+}
+
+.tel {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.kolorhome {
+    color: gold;
+}
+
+.center {
+    margin: 30px;
+}
+
+.imang{
+ background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+ background-repeat: no-repeat;
+ height: 700px;
+ background-size: cover;
+ background-position: center center; 
+ padding: 20px;
+ overflow: hidden;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+
+}
+
+
+.horizon {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.centertwo {
+    margin: 30px;
+}
+
+.imangtwo{
+ background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 700px;
+ background-size: cover;
+ background-position: center center; 
+ padding: 20px;
+ overflow: hidden;
+}
+
+.horizontwo {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    right: 20px;
+    font-size: 1.6rem;
+}
+
+.hor1two {
+    color: gold;
+    position: relative;
+    top: -45px;
+    font-size: 1.1rem;
+}
+
+.hor2two {
+    font-size: 2.4rem;
+}
+
+.fas .fa-car .gtx{
+color: aquamarine;
+}
+
+.hor3two {
+    color: grey;
+}
+
+.resistor {
+    color: gold;
+}
+.horizontwoFooterMain {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 95px;
+}
+
+
+.horizontwoFooter {
+    background-color: silver;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.elment i{
+    font-size: 4rem;
+    margin-left: 80px;
+}
+
+.cat {
+    width: 100%;
+}
+
+.phone {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+  
+
+footer {
+    margin-top: 300px;
+}
+
+.footerKontyner {
+    margin: 30px;
+    overflow: hidden;
+
+}
+
+.listem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.listTwo {
+margin-right: 40px;
+}
+
+.logos {
+    display: flex;
+    width: 10%;
+}
+
+
+.logos img {
+    max-width: 100%;   
+}
+
+.footerImang {
+    background: url("https://cdn.pixabay.com/photo/2016/10/16/13/06/new-york-1745089_960_720.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center; 
+    padding: 20px;
+}
+
+.listTwo {
+    position: relative;
+    left: -190px;
+    color: white;
+
+}
+.listOne {
+    position: relative;
+    left: -60px;
+    color: white;
+}
+
+.icons {
+    text-align: right;
+    justify-content: end;
+}
